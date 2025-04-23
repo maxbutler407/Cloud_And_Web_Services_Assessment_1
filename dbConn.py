@@ -1,14 +1,13 @@
 import MySQLdb
 
-# Database configuration
+# database configuration
 db_config = {
-    'host': '127.0.0.1',  # or use 'localhost' if you're confident it's connecting locally
+    'host': '127.0.0.1',
     'user': 'root',
     'passwd': 'computing',
     'db': 'AdventureWorks2019',
-    'port': 3307  # <-- important fix
+    'port': 3307
 }
-
   
-# Create a connection to the database
+# creates a connection to the database
 conn = MySQLdb.connect(**db_config) 
